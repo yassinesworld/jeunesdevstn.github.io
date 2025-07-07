@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pfp1.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>JDT Site Web</title>
+</head>
+<body>
+    <div id="nodes"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+    <div class="logo-container">
+        <a href="https://www.facebook.com/profile.php?id=61577340192125" target="_blank" id="logo">
+            <img src="logo.png" alt="logo" class="logo" />
+        </a>
+        <p><span class="capital">J</span>eunes <span class="capital">D</span>éveloppeurs <span class="capital">T</span>unisia</p>
+    </div>
+
+    <div class="main">
+        <div class="motto">
+            <p><ins><b>Nous</b></ins> <span class="jdt">J</span>aillissons.</p>
+            <p><ins><b>Nous</b></ins> <span class="jdt">D</span>essinons.</p>
+            <p><ins><b>Nous</b></ins> <span class="jdt">T</span>ranscendons.</p>
+            <a a href="javascript:void(0);" onclick="openWindow('form-window')" class="join-link">
+                <button class="join">Joindre Ici</button>
+            </a>
+        </div>
+
+        <a href="javascript:void(0);" onclick="openWindow('readme')">
+            <div class="apps">
+                <img src="pfp1.ico" alt="readme.md" />
+                <p>README.md</p>
+            </div>
+        </a>
+
+        <a href="javascript:void(0);" onclick="openWindow('contact')">
+            <div class="apps">
+                <img src="pfp2.ico" alt="contact.exe" />
+                <p>contact.exe</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="desktop-window hidden" id="form-window">
+        <div class="window-bar">
+            <span>Formulaire JDT</span>
+            <button class="close-btn" onclick="closeWindow('form-window')">×</button>
+        </div>
+        <div class="window-content">
+            <div class="scrollable-content" id="typeform-container">Chargement ...</div>
+        </div>
+    </div>
+
+    <div class="desktop-window hidden" id="readme">
+        <div class="window-bar">
+            <span>README.md</span>
+        </div>
+        <button class="close-btn" onclick="closeWindow('readme')">×</button>
+        <div class="window-content scrollable-content">
+            <h1 style="text-align: center;">Jeunes Devs Tunisia</h1>
+            <div class="qa">
+                <button class="qa-question"><h2>Qui sommes nous ?</h2></button>
+                <div class="qa-answer">
+                    <p>🚀 <strong>Jeunes Devs Tunisia</strong> — Communauté pour jeunes passionné(e)s de <strong>code</strong>, <strong>jeux</strong>, <strong>IA</strong> et <strong>tech</strong> (13–17 ans).<br>
+                    Apprends, crée et progresse avec nous cet été ! 💻</p>
+                </div>
+            </div>
+            <h2>👋 Présentation</h2>
+            <p>Tu es ado entre <strong>13 et 17 ans</strong>, en <strong>Tunisie</strong>, et tu aimes :</p>
+            <ul>
+            <li>Programmer ou apprendre à coder</li>
+            <li>Créer des jeux ou des projets digitaux</li>
+            <li>Explorer l’intelligence artificielle</li>
+            <li>Bricoler avec la technologie</li>
+            </ul>
+            <p>Alors <strong>rejoins notre équipe</strong> !</p>
+
+            <div class="qa">
+                <button class="qa-question"><h2>Quelle est notre mission ?</h2></button>
+                <div class="qa-answer">
+                    <h2>🔥 Notre mission</h2>
+                    <p>Jeunes Devs Tunisia est un projet lancé par des ados pour des ados.<br>
+                    Notre but est simple : <strong>apprendre, créer et s’amuser ensemble</strong> tout en développant des compétences utiles pour le futur.</p>
+                <p>Peu importe ton niveau :<br>
+                👉 Que tu sois <strong>débutant(e)</strong> ou <strong>avancé(e)</strong>, si tu es motivé(e), tu es le/la bienvenu(e) !</p>
+                </div>
+            </div>
+
+            <div class="qa">
+                <button class="qa-question"><h2>Qu'est-ce-qu'on fait ?</h2></button>
+                <div class="qa-answer">
+                    <h2>🧠 Ce qu’on fait :</h2>
+                    <hr>
+                    <p>🚧 Projets en groupe (jeux, sites, apps, etc.)</p>
+                    <hr>
+                    <p>🧑‍🏫 Apprentissage en équipe (web, Python, IA, etc.)</p>
+                    <hr>
+                    <p>💬 Discussions, entraide et partage d’idées</p>
+                    <hr>
+                    <p>📅 Rencontres et mini-événements IRL possibles</p>
+                    <hr>
+                    <p>Apprends, crée et progresse avec nous cet été ! 💻</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>✉️ Rejoindre l’équipe</h2>
+            <ul>
+            <li>Clique sur <strong>Joindre Ici</strong> depuis le site</li>
+            <li>Envoie un message à : <a href="mailto:jeunesdevstn@outlook.com">jeunesdevstn@outlook.com</a></li>
+            <li>Invite tes potes à nous découvrir aussi !</li>
+            </ul>
+
+            <hr>
+
+            <p><strong>#Tunisie #Dev #Jeunes #Créateurs #TechTeensTN #SummerTeam</strong></p>
+        </div>
+        </div>
+
+
+    <div class="desktop-window hidden" id="contact">
+        <div class="window-bar">
+            <span>contact.exe</span>
+        </div>
+        <button class="close-btn" onclick="closeWindow('contact')">×</button>
+        <div class="window-content scrollable-content">
+            <p>📧 Email : <a href="mailto:jeunesdevstn@outlook.com">jeunesdevstn@outlook.com</a></p>
+            <p>🌐 Site Web : <a href="https://jeunesdevstunisia.github.io" target="_blank">jeunesdevstunisia.github.io</a></p>
+            <p>💬 Facebook : <a href="https://www.facebook.com/profile.php?id=61577340192125" target="_blank">Jeunes Devs Tunisia</a></p>
+            <p>🚀 Rejoins-nous pour coder, apprendre et créer ensemble !</p>
+        </div>
+    </div>
+
+</body>
+</html>
