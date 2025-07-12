@@ -79,7 +79,15 @@ function closeWindow(id) {
 
     if (id === "form-window") {
       const container = document.getElementById("typeform-container");
-      container.innerHTML = "";
+      container.innerHTML = `
+                <div class="parent">
+                    <div class="cont">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>`;
     }
 
     win.removeEventListener("animationend", handler);
